@@ -1,0 +1,68 @@
+body {
+	background-color: #CCEEFF
+}
+
+h1 {
+	color: #FF0000;
+	font-family: "Lucida Console", "Courier", monospace;
+	background-color: #FFFFFF;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 50px;
+}
+
+h2 {
+	text-align: center;
+	font-family: "Lucida Console", "Courier", monospace;
+	font-style: italic;
+}
+
+h3{
+	font-family: "Comic Sans MS", "Impact", sans-serif;
+	font-size: 20px;
+	font-style: none;
+	text-align: justify;
+}
+
+p {
+	text-align: center;
+	font-family: "Arial", "Comic Sans MS", sans-serif;
+}
+
+.content {
+	display:none;
+	overflow:hidden;
+	background-color:#f1f1f1;
+	padding: 0 18px;
+}
+
+.rules, .credits {
+	cursor:pointer;
+	background-color: #eee;
+	color: #444;
+	width: 100%;
+	border: none;
+	font-size:15px;
+}
+
+#active, .rules:hover {
+	background-color:#ccc;
+}
+
+.games {
+	background-color:#FFFFFF;
+	border: 3px #000000 outset;
+	width: 90%;
+	float: left;
+	padding: 5px;
+}
+
+.image {
+	width: 30%;
+	float: left;
+}
+
+.description {
+	width: 70%;
+	float: left;
+}

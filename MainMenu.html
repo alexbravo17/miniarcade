@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Main Menu </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+<body>
+
+	<h1>
+		Mini-Arcade
+	</h1>
+	<h2>
+		Made by: Alexander
+	</h2>
+	<div id="TTT" class="games"> 
+		<div class="image"> 
+			<img src="Images/TicTacToe.png" width="200px">
+		</div>
+		<div class="description">
+			<h3>	
+				The classic game of tictactoe, where one player plays the circle, the other play the cross.
+			</h3>
+		</div>
+	</div>
+	<div id="Hangman" class="games"> 
+		<div class="image"> 
+			<img src="Images/Hangman.png" width="200px">
+		</div>
+		<div class="description">
+			<h3>
+				The word guessing game of hangman. The words are taken from a list of words.<br>
+				I challenge you to clear this 3 times in a row!
+			</h3>
+		</div>
+	</div>
+	<div id="Blackjack"class="games"> 
+		<div class="image"> 
+			<img src="Images/Blackjack.png" width="200px">
+		</div>
+		<div class="description">
+			<h3>
+				Blackjack is a card game that involves not only luck, but also calculation of propabilities  by more experience blackjack players.
+			</h3>
+		</div>
+	</div>
+	
+	<button class="credits "id="dormant"> Credits </button>
+	
+	<div class="content"> 
+		<h3>
+			Language used = JavaScript <br>
+			Library used = jquery <br>
+			Images of hangman by Audrick <br>
+			Help in coding from internet, specifically stackoverflow website, jquery website, w3school website 
+		</h3>
+	</div>
+<script>
+$(document).ready(function(){
+	$(".credits").click(function(){
+		if($(this).attr("src") == "dormant"){
+			$(this).attr("id","active");
+		}
+		else{
+			$(this).attr("id","dormant");
+		};
+		$(".content").toggle();
+	});
+});
+</script>
+</body>
+</html>
